@@ -1,0 +1,6 @@
+
+{
+    "agent_name": "spi",
+    "itf": ["apb", "mac"],
+    "seq_item": "spi"
+}

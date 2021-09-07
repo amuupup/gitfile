@@ -1,0 +1,12 @@
+
+{
+    "env": "spi",
+    "vsqr_name": "spi_virtual_sqr",
+    "basic_test_name": "spi_basic_test",
+    "interface": ["spi","apb"],
+    "agent": ["apb","spi_mst","spi_slv"],
+    "reg_model_name":"ral_block_reg_model",
+    "scoreboard": "spi",
+    "coverage": "spi",
+    "seq_item": ["spi_mst","spi_slv","apb"]
+}

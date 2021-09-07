@@ -1,0 +1,1116 @@
+register can_mcr {
+  field inrq (test_top.dut.can_mcr) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field sleep (test_top.dut.can_mcr) @'1 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field txfp (test_top.dut.can_mcr) @'2 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field rflm (test_top.dut.can_mcr) @'3 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field nart (test_top.dut.can_mcr) @'4 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field awum (test_top.dut.can_mcr) @'5 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field abom (test_top.dut.can_mcr) @'6 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ttcm (test_top.dut.can_mcr) @'7 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field reset (test_top.dut.can_mcr) @'15 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+  field dbf (test_top.dut.can_mcr) @'16 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_msr {
+  field inak (test_top.dut.can_msr) @'0 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field slak (test_top.dut.can_msr) @'1 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field erri (test_top.dut.can_msr) @'2 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field wkui (test_top.dut.can_msr) @'3 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field slaki (test_top.dut.can_msr) @'4 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field txm (test_top.dut.can_msr) @'8 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field rxm (test_top.dut.can_msr) @'9 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field samp (test_top.dut.can_msr) @'10 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field rx (test_top.dut.can_msr) @'11 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_tsr {
+  field rqcp0 (test_top.dut.can_tsr) @'0 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field txok0 (test_top.dut.can_tsr) @'1 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field alst0 (test_top.dut.can_tsr) @'2 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field terr0 (test_top.dut.can_tsr) @'3 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field abrq0 (test_top.dut.can_tsr) @'7 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+  field rqcp1 (test_top.dut.can_tsr) @'8 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field txok1 (test_top.dut.can_tsr) @'9 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field alst1 (test_top.dut.can_tsr) @'10 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field terr1 (test_top.dut.can_tsr) @'11 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field abrq1 (test_top.dut.can_tsr) @'15 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+  field rqcp2 (test_top.dut.can_tsr) @'16 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field txok2 (test_top.dut.can_tsr) @'17 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field alst2 (test_top.dut.can_tsr) @'18 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field terr2 (test_top.dut.can_tsr) @'19 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field abrq2 (test_top.dut.can_tsr) @'23 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+  field code (test_top.dut.can_tsr) @'24 {
+    bits 2;
+    access ro;
+    reset 'h0;
+  }
+  field tme0 (test_top.dut.can_tsr) @'26 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field tme1 (test_top.dut.can_tsr) @'27 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field tme2 (test_top.dut.can_tsr) @'28 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field low0 (test_top.dut.can_tsr) @'29 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field low1 (test_top.dut.can_tsr) @'30 {
+    bits 1;
+    access ro;
+    reset 'h1;
+  }
+  field low2 (test_top.dut.can_tsr) @'31 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rf0r {
+  field fmp0 (test_top.dut.can_rf0r) @'0 {
+    bits 2;
+    access ro;
+    reset 'h0;
+  }
+  field full0 (test_top.dut.can_rf0r) @'3 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field fovr0 (test_top.dut.can_rf0r) @'4 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field rfom0 (test_top.dut.can_rf0r) @'5 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+}
+register can_rf1r {
+  field fmp1 (test_top.dut.can_rf1r) @'0 {
+    bits 2;
+    access ro;
+    reset 'h0;
+  }
+  field full1 (test_top.dut.can_rf1r) @'3 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field fovr1 (test_top.dut.can_rf1r) @'4 {
+    bits 1;
+    access w1c;
+    reset 'h0;
+  }
+  field rfom1 (test_top.dut.can_rf1r) @'5 {
+    bits 1;
+    access rs;
+    reset 'h0;
+  }
+}
+register can_ier {
+  field tmeie (test_top.dut.can_ier) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field fmpie0 (test_top.dut.can_ier) @'1 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ffie0 (test_top.dut.can_ier) @'2 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field fovie0 (test_top.dut.can_ier) @'3 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field fmpie1 (test_top.dut.can_ier) @'4 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ffie1 (test_top.dut.can_ier) @'5 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field fovie1 (test_top.dut.can_ier) @'6 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ewgie (test_top.dut.can_ier) @'8 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field epvie (test_top.dut.can_ier) @'9 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field bofie (test_top.dut.can_ier) @'10 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field lecie (test_top.dut.can_ier) @'11 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field errie (test_top.dut.can_ier) @'15 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field wkuie (test_top.dut.can_ier) @'16 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field slkie (test_top.dut.can_ier) @'17 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_esr {
+  field ewgf (test_top.dut.can_esr) @'0 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field epvf (test_top.dut.can_esr) @'1 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field boff (test_top.dut.can_esr) @'3 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field lec (test_top.dut.can_esr) @'4 {
+    bits 3;
+    access rw;
+    reset 'h0;
+  }
+  field tec (test_top.dut.can_esr) @'16 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field rec (test_top.dut.can_esr) @'24 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_btr {
+  field brp (test_top.dut.can_btr) @'0 {
+    bits 10;
+    access rw;
+    reset 'h0;
+  }
+  field ts1 (test_top.dut.can_btr) @'16 {
+    bits 4;
+    access rw;
+    reset 'h0;
+  }
+  field ts2 (test_top.dut.can_btr) @'20 {
+    bits 3;
+    access rw;
+    reset 'h1;
+  }
+  field sjw (test_top.dut.can_btr) @'24 {
+    bits 2;
+    access rw;
+    reset 'h0;
+  }
+  field lbkm (test_top.dut.can_btr) @'30 {
+    bits 1;
+    access rw;
+    reset 'h1;
+  }
+  field silm (test_top.dut.can_btr) @'31 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_ti0r {
+  field txrq (test_top.dut.can_ti0r) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field rtr (test_top.dut.can_ti0r) @'1 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ide (test_top.dut.can_ti0r) @'2 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field exid (test_top.dut.can_ti0r) @'3 {
+    bits 18;
+    access rw;
+    reset 'h0;
+  }
+  field stid (test_top.dut.can_ti0r) @'21 {
+    bits 11;
+    access rw;
+    reset 'h1;
+  }
+}
+register can_ti1r {
+  field txrq (test_top.dut.can_ti1r) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field rtr (test_top.dut.can_ti1r) @'1 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ide (test_top.dut.can_ti1r) @'2 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field exid (test_top.dut.can_ti1r) @'3 {
+    bits 18;
+    access rw;
+    reset 'h0;
+  }
+  field stid (test_top.dut.can_ti1r) @'21 {
+    bits 11;
+    access rw;
+    reset 'h1;
+  }
+}
+register can_ti2r {
+  field txrq (test_top.dut.can_ti2r) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field rtr (test_top.dut.can_ti2r) @'1 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field ide (test_top.dut.can_ti2r) @'2 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field exid (test_top.dut.can_ti2r) @'3 {
+    bits 18;
+    access rw;
+    reset 'h0;
+  }
+  field stid (test_top.dut.can_ti2r) @'21 {
+    bits 11;
+    access rw;
+    reset 'h1;
+  }
+}
+register can_tdt0r {
+  field dlc (test_top.dut.can_tdt0r) @'0 {
+    bits 4;
+    access rw;
+    reset 'h0;
+  }
+  field tgt (test_top.dut.can_tdt0r) @'8 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field time (test_top.dut.can_tdt0r) @'16 {
+    bits 16;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdt1r {
+  field dlc (test_top.dut.can_tdt1r) @'0 {
+    bits 4;
+    access rw;
+    reset 'h0;
+  }
+  field tgt (test_top.dut.can_tdt1r) @'8 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field time (test_top.dut.can_tdt1r) @'16 {
+    bits 16;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdt2r {
+  field dlc (test_top.dut.can_tdt2r) @'0 {
+    bits 4;
+    access rw;
+    reset 'h0;
+  }
+  field tgt (test_top.dut.can_tdt2r) @'8 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+  field time (test_top.dut.can_tdt2r) @'16 {
+    bits 16;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdl0r {
+  field data0 (test_top.dut.can_tdl0r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data1 (test_top.dut.can_tdl0r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data2 (test_top.dut.can_tdl0r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data3 (test_top.dut.can_tdl0r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdl1r {
+  field data0 (test_top.dut.can_tdl1r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data1 (test_top.dut.can_tdl1r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data2 (test_top.dut.can_tdl1r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data3 (test_top.dut.can_tdl1r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdl2r {
+  field data0 (test_top.dut.can_tdl2r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data1 (test_top.dut.can_tdl2r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data2 (test_top.dut.can_tdl2r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data3 (test_top.dut.can_tdl2r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdh0r {
+  field data4 (test_top.dut.can_tdh0r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data5 (test_top.dut.can_tdh0r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data6 (test_top.dut.can_tdh0r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data7 (test_top.dut.can_tdh0r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdh1r {
+  field data4 (test_top.dut.can_tdh1r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data5 (test_top.dut.can_tdh1r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data6 (test_top.dut.can_tdh1r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data7 (test_top.dut.can_tdh1r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_tdh2r {
+  field data4 (test_top.dut.can_tdh2r) @'0 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data5 (test_top.dut.can_tdh2r) @'8 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data6 (test_top.dut.can_tdh2r) @'16 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+  field data7 (test_top.dut.can_tdh2r) @'24 {
+    bits 8;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_ri0r {
+  field rtr (test_top.dut.can_ri0r) @'1 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field ide (test_top.dut.can_ri0r) @'2 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field exid (test_top.dut.can_ri0r) @'3 {
+    bits 18;
+    access ro;
+    reset 'h0;
+  }
+  field stid (test_top.dut.can_ri0r) @'21 {
+    bits 11;
+    access ro;
+    reset 'h1;
+  }
+}
+register can_ri1r {
+  field rtr (test_top.dut.can_ri1r) @'1 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field ide (test_top.dut.can_ri1r) @'2 {
+    bits 1;
+    access ro;
+    reset 'h0;
+  }
+  field exid (test_top.dut.can_ri1r) @'3 {
+    bits 18;
+    access ro;
+    reset 'h0;
+  }
+  field stid (test_top.dut.can_ri1r) @'21 {
+    bits 11;
+    access ro;
+    reset 'h1;
+  }
+}
+register can_rdt0r {
+  field dlc (test_top.dut.can_rdt0r) @'0 {
+    bits 4;
+    access ro;
+    reset 'h0;
+  }
+  field fmi (test_top.dut.can_rdt0r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field time (test_top.dut.can_rdt0r) @'16 {
+    bits 16;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rdt1r {
+  field dlc (test_top.dut.can_rdt1r) @'0 {
+    bits 4;
+    access ro;
+    reset 'h0;
+  }
+  field fmi (test_top.dut.can_rdt1r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field time (test_top.dut.can_rdt1r) @'16 {
+    bits 16;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rdl0r {
+  field data0 (test_top.dut.can_rdl0r) @'0 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data1 (test_top.dut.can_rdl0r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data2 (test_top.dut.can_rdl0r) @'16 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data3 (test_top.dut.can_rdl0r) @'24 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rdl1r {
+  field data0 (test_top.dut.can_rdl1r) @'0 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data1 (test_top.dut.can_rdl1r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data2 (test_top.dut.can_rdl1r) @'16 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data3 (test_top.dut.can_rdl1r) @'24 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rdh0r {
+  field data4 (test_top.dut.can_rdh0r) @'0 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data5 (test_top.dut.can_rdh0r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data6 (test_top.dut.can_rdh0r) @'16 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data7 (test_top.dut.can_rdh0r) @'24 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_rdh1r {
+  field data4 (test_top.dut.can_rdh1r) @'0 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data5 (test_top.dut.can_rdh1r) @'8 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data6 (test_top.dut.can_rdh1r) @'16 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+  field data7 (test_top.dut.can_rdh1r) @'24 {
+    bits 8;
+    access ro;
+    reset 'h0;
+  }
+}
+register can_fmr {
+  field fint (test_top.dut.can_fmr) @'0 {
+    bits 1;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_fm1r {
+  field fbm (test_top.dut.can_fm1r) @'0 {
+    bits 14;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_fs1r {
+  field fsc (test_top.dut.can_fs1r) @'0 {
+    bits 14;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_ffa1r {
+  field ffa (test_top.dut.can_ffa1r) @'0 {
+    bits 14;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_fa1r {
+  field fact (test_top.dut.can_fa1r) @'0 {
+    bits 14;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f0r1 {
+  field fb (test_top.dut.can_f0r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f0r2 {
+  field fb (test_top.dut.can_f0r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f1r1 {
+  field fb (test_top.dut.can_f1r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f1r2 {
+  field fb (test_top.dut.can_f1r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f2r1 {
+  field fb (test_top.dut.can_f2r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f2r2 {
+  field fb (test_top.dut.can_f2r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f3r1 {
+  field fb (test_top.dut.can_f3r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f3r2 {
+  field fb (test_top.dut.can_f3r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f4r1 {
+  field fb (test_top.dut.can_f4r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f4r2 {
+  field fb (test_top.dut.can_f4r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f5r1 {
+  field fb (test_top.dut.can_f5r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f5r2 {
+  field fb (test_top.dut.can_f5r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f6r1 {
+  field fb (test_top.dut.can_f6r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f6r2 {
+  field fb (test_top.dut.can_f6r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f7r1 {
+  field fb (test_top.dut.can_f7r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f7r2 {
+  field fb (test_top.dut.can_f7r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f8r1 {
+  field fb (test_top.dut.can_f8r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f8r2 {
+  field fb (test_top.dut.can_f8r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f9r1 {
+  field fb (test_top.dut.can_f9r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f9r2 {
+  field fb (test_top.dut.can_f9r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f10r1 {
+  field fb (test_top.dut.can_f10r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f10r2 {
+  field fb (test_top.dut.can_f10r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f11r1 {
+  field fb (test_top.dut.can_f11r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f11r2 {
+  field fb (test_top.dut.can_f11r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f12r1 {
+  field fb (test_top.dut.can_f12r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f13r2 {
+  field fb (test_top.dut.can_f13r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f12r2 {
+  field fb (test_top.dut.can_f12r2) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+register can_f13r1 {
+  field fb (test_top.dut.can_f13r1) @'0 {
+    bits 32;
+    access rw;
+    reset 'h0;
+  }
+}
+block reg_model {
+  bytes 4;
+  register can_mcr        (can_mcr)        @'h0
+  register can_msr        (can_msr)        @'h4
+  register can_tsr        (can_tsr)        @'h8
+  register can_rf0r        (can_rf0r)        @'hc
+  register can_rf1r        (can_rf1r)        @'h10
+  register can_ier        (can_ier)        @'h14
+  register can_esr        (can_esr)        @'h18
+  register can_btr        (can_btr)        @'h1c
+  register can_ti0r        (can_ti0r)        @'h180
+  register can_tdt0r        (can_tdt0r)        @'h184
+  register can_tdl0r        (can_tdl0r)        @'h188
+  register can_tdh0r        (can_tdh0r)        @'h18c
+  register can_ti1r        (can_ti1r)        @'h190
+  register can_tdt1r        (can_tdt1r)        @'h194
+  register can_tdl1r        (can_tdl1r)        @'h198
+  register can_tdh1r        (can_tdh1r)        @'h19c
+  register can_ti2r        (can_ti2r)        @'h1a0
+  register can_tdt2r        (can_tdt2r)        @'h1a4
+  register can_tdl2r        (can_tdl2r)        @'h1a8
+  register can_tdh2r        (can_tdh2r)        @'h1ac
+  register can_ri0r        (can_ri0r)        @'h1b0
+  register can_rdt0r        (can_rdt0r)        @'h1b4
+  register can_rdl0r        (can_rdl0r)        @'h1b8
+  register can_rdh0r        (can_rdh0r)        @'h1bc
+  register can_ri1r        (can_ri1r)        @'h1c0
+  register can_rdt1r        (can_rdt1r)        @'h1c4
+  register can_rdl1r        (can_rdl1r)        @'h1c8
+  register can_rdh1r        (can_rdh1r)        @'h1cc
+  register can_fmr        (can_fmr)        @'h200
+  register can_fm1r        (can_fm1r)        @'h204
+  register can_fs1r        (can_fs1r)        @'h20c
+  register can_ffa1r        (can_ffa1r)        @'h214
+  register can_fa1r        (can_fa1r)        @'h21c
+  register can_f0r1        (can_f0r1)        @'h240
+  register can_f0r2        (can_f0r2)        @'h244
+  register can_f1r1        (can_f1r1)        @'h248
+  register can_f1r2        (can_f1r2)        @'h24c
+  register can_f2r1        (can_f2r1)        @'h250
+  register can_f2r2        (can_f2r2)        @'h254
+  register can_f3r1        (can_f3r1)        @'h258
+  register can_f3r2        (can_f3r2)        @'h25c
+  register can_f4r1        (can_f4r1)        @'h260
+  register can_f4r2        (can_f4r2)        @'h264
+  register can_f5r1        (can_f5r1)        @'h268
+  register can_f5r2        (can_f5r2)        @'h26c
+  register can_f6r1        (can_f6r1)        @'h270
+  register can_f6r2        (can_f6r2)        @'h274
+  register can_f7r1        (can_f7r1)        @'h278
+  register can_f7r2        (can_f7r2)        @'h27c
+  register can_f8r1        (can_f8r1)        @'h280
+  register can_f8r2        (can_f8r2)        @'h284
+  register can_f9r1        (can_f9r1)        @'h288
+  register can_f9r2        (can_f9r2)        @'h28c
+  register can_f10r1        (can_f10r1)        @'h290
+  register can_f10r2        (can_f10r2)        @'h294
+  register can_f11r1        (can_f11r1)        @'h298
+  register can_f11r2        (can_f11r2)        @'h29c
+  register can_f12r1        (can_f12r1)        @'h2a0
+  register can_f12r2        (can_f12r2)        @'h2a4
+  register can_f13r1        (can_f13r1)        @'h2a8
+  register can_f13r2        (can_f13r2)        @'h2ac
+}
